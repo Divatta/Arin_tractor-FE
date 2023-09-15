@@ -10,8 +10,6 @@ import {
 import { UploadOutlined } from "@ant-design/icons";
 import axios from "axios";
 import BlogApi from "../Components/API/BlogApi";
-// import { useSelector } from "react-redux";
-// const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const { TextArea } = Input;
 
@@ -22,9 +20,6 @@ function Blogs() {
   const [isImageUploaded, setIsImageUploaded] = useState(false);
   const [uploading, setUploading] = useState(false);
   
-
-  // const token = useSelector((state) => state.auth.token);
-
   const handleSubmit = async () => {
     try {
       const response = await BlogApi.create(
@@ -33,7 +28,6 @@ function Blogs() {
           content,
           image: image.url,
         }
-        // { headers: { Authorization: `Bearer ${token}` } }
       );
 
       console.log("Blog saved:", response.data);
@@ -65,7 +59,6 @@ function Blogs() {
         {
           headers: {
             "Content-Type": "multipart/form-data"
-            // Authorization: `Bearer ${token}`,
           },
         }
       );

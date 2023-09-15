@@ -1,6 +1,7 @@
-
-    .aboutInfo{
-        padding: 30px 150px;
+.aboutInfo{
+    padding: 30px 150px;
+    .aboutInfo1{
+        
         @media screen and (max-width: 768px){
             padding: 20px;
         }
@@ -11,3 +12,4 @@
         }
        
     }
+}
