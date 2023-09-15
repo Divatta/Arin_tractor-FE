@@ -36,15 +36,9 @@
     }
 }
 .whatsapp-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: end;
-    position: static;
-    right: 0;
-    top: 50%;
-    bottom: 50%;
-    margin-right: 0px; /* Adjust the margin to control the spacing */
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
   }
 
   .contactAddress{
