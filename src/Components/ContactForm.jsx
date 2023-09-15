@@ -1,8 +1,36 @@
-import { Form, Input, Button, Typography} from 'antd'
-
+import { Form, Input, Button, Typography,message as antdMessage} from 'antd'
+import axios from 'axios';
+import React, {useState} from 'react';
 const {Title} =  Typography;
 
 function ContactForm() {
+    const [contact, setContact] = useState({
+        userName: "",
+        phoneNumber: "",
+        email:"",
+        enquiry:"",
+        location:""
+    })
+
+    const readValue = (e) => {
+        const { name, value } = e.target;
+        setContact({ ...contact, [name]: value})
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            axios.post(`https://arintractor.onrender.com/api/v1/contact/create`, contact, {
+                headers:{
+                    "Content-Type": "application/json"
+                }
+            })
+            antdMessage.success("Contact datas created successfully");  
+        } catch (error) {
+            console.error("Error creating contact us:", error);
+            antdMessage.error("Error creating contact us"); 
+        }
+    }
   return (
     <div className="contactForm">
         <Form className="form">
@@ -14,6 +42,7 @@ function ContactForm() {
                 id="userName"
                 placeholder="Your Name"
                 className="input"
+                onChange={readValue}
                 />
             </Form.Item>
             <Form.Item htmlFor="phoneNumber" className="name">
@@ -23,6 +52,7 @@ function ContactForm() {
                 id="phone"
                 placeholder="Phone"
                 className="input"
+                onChange={readValue}
                 />
             </Form.Item>
             <Form.Item htmlFor="email">
@@ -32,15 +62,17 @@ function ContactForm() {
                 id="email"
                 placeholder="Email Id"
                 className="input"
+                onChange={readValue}
                 />
             </Form.Item>
-            <Form.Item htmlFor="lookingFor" className="name">
+            <Form.Item htmlFor="enquiry" className="name">
                 <Input
                 type="text"
-                name="lookingFor"
-                id="location"
+                name="enquiry"
+                id="enquiry"
                 placeholder="Seeking Enquiry for"
                 className="input"
+                onChange={readValue}
                 />
             </Form.Item>
             <Form.Item htmlFor="location" className="name">
@@ -49,10 +81,11 @@ function ContactForm() {
                 name="location"
                 id="location"
                 placeholder="Location"
+                onChange={readValue}
                 />
             </Form.Item>
 
-            <Button className="btn">
+            <Button className="btn" onClick={handleSubmit}>
                 Send Message
             </Button>
         </Form>
