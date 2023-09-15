@@ -1,10 +1,14 @@
-import React from 'react'
-import LatestBlogs from '../Components/LatestBlog'
+
+import Banners from '../Components/Banners'
+import '../scss/HomePage.scss'
+import Figures from '../Components/Figures'
 
 function HomePage() {
   return (
     <div>
-      <LatestBlogs/>
+      <Banners/>
+      <Figures/>
+     
     </div>
   )
 }

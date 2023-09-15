@@ -4,8 +4,15 @@
 #navbar {
   padding-block: 10px;
   @include flex.flexbox(row);
+  gap: 40px;
   box-shadow: vrs.$prim-shadow;
+  img{
+    width: 300px;
+    height: 100px;
+  }
   .content-container{
+
+   
   .logo-title {
     @include flex.flexbox;
     cursor: pointer;
@@ -62,7 +69,7 @@
       display: block;
     }
     .links.open {
-      width: 400px;
+      width: 200px;
       opacity: 1;
     }
     .links {
@@ -71,10 +78,10 @@
       position: absolute;
       background-color: white;
       margin-left: -8%;
-      top: 100%;
-      right: 0;
-      left: 0;
-      width: 0;
+      top: 40px;
+      right: 100%;
+      left: -160px;
+      width: 20%;
       height: 800px;
       justify-content: start;
       gap: 10px;
@@ -84,8 +91,8 @@
       li {
         width: 100%;
         display: flex;
-        justify-content: left;
-        align-items: flex-end;
+        justify-content: start;
+        align-items: flex-start;
         a {
           text-align: right;
           font-size: 18px;

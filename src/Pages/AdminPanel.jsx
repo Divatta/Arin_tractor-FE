@@ -7,7 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function AdminPanel() {
   return (
-    <div style={{margin: "auto"}}>
+    <div style={{textAlign: "center", margin: "100px 0px"}}>
             <NavLink to={'/blogs'}>
                 <Button type="primary">
                     Add Blog
