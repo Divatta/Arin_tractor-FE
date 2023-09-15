@@ -9,6 +9,7 @@ import {
 } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import axios from "axios";
+import BlogApi from "../Components/API/BlogApi";
 // import { useSelector } from "react-redux";
 // const baseUrl = import.meta.env.VITE_BASE_URL;
 
@@ -24,52 +25,59 @@ function Blogs() {
 
   // const token = useSelector((state) => state.auth.token);
 
-  // const handleSubmit = async () => {
-  //   try {
-  //     const response = await axios.post(
-  //       `${baseUrl}/blog/addBlog`,
-  //       {
-  //         title,
-  //         content,
-  //         image,
-  //       },
-  //       { headers: { Authorization: `Bearer ${token}` } }
-  //     );
+  const handleSubmit = async () => {
+    try {
+      const response = await BlogApi.create(
+        {
+          title,
+          content,
+          image: image.url,
+        }
+        // { headers: { Authorization: `Bearer ${token}` } }
+      );
 
-  //     console.log("Blog saved:", response.data);
-  //     antdMessage.success("Blog saved successfully");
-  //   } catch (error) {
-  //     console.error("Error saving blog:", error);
-  //     antdMessage.error("Error saving blog");
-  //   }
-  // };
+      console.log("Blog saved:", response.data);
+      antdMessage.success("Blog saved successfully");
+    } catch (error) {
+      console.error("Error saving blog:", error);
+      antdMessage.error("Error saving blog");
+    }
+  };
 
-  // const handleImageUpload = async (file) => {
-  //   setIsImageUploaded(false);
-  //   setUploading(true);
-  //   try {
-  //     const formData = new FormData();
-  //     formData.append("image", file);
+  const handleImageUpload = async (e) => {
+    setIsImageUploaded(false);
+    setUploading(true);
+    try {
+      const file = e.target.files[0];
+        console.log('image data =', file);
 
-  //     const response = await axios.post(
-  //       `${baseUrl}/user/uploadImage`,
-  //       formData,
-  //       {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //           Authorization: `Bearer ${token}`,
-  //         },
-  //       }
-  //     );
-  //     setImage(response.data.image.src);
-  //     setIsImageUploaded(true);
-  //     // antdMessage.success("Image uploaded successfully");
-  //   } catch (error) {
-  //     console.error("Image upload error:", error);
-  //   } finally {
-  //     setUploading(false);
-  //   }
-  // };
+        if(!file)
+            return console.log('image not exists.. choose image to upload.')
+        
+        if(file.size > 5 * 1024 * 1024)
+                return console.log('File size must be less than 5Mb')
+      let formData = new FormData();
+      formData.append("profile", file);
+
+      const response = await axios.post(
+        `https://arintractor.onrender.com/api/v1/image/upload`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data"
+            // Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      setImage(response.data.result);
+      setIsImageUploaded(true);
+      // antdMessage.success("Image uploaded successfully");
+    } catch (error) {
+      console.error("Image upload error:", error);
+    } finally {
+      setUploading(false);
+    }
+  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -90,8 +98,8 @@ function Blogs() {
 
             <Button icon={<UploadOutlined />}>{image ? "Image Uploaded" : "Upload Cover Photo"}</Button>
           </Upload> */}
-          <Upload 
-          // beforeUpload={handleImageUpload} 
+          {/* <Upload 
+          beforeUpload={handleImageUpload} 
           showUploadList={false}>
             {uploading ? (
               <Spin spinning={uploading}>
@@ -104,7 +112,10 @@ function Blogs() {
                 {isImageUploaded ? "Image Uploaded" : "Upload Cover Photo"}
               </Button>
             )}
-          </Upload>
+          </Upload> */}
+          <Input type="file" name="image"
+          id="image" onChange={handleImageUpload}
+          />
         </Form.Item>
         {isImageUploaded && (
           <p style={{ color: "green" }}>Image uploaded successfully</p>
@@ -112,7 +123,7 @@ function Blogs() {
         <Form.Item>
           <Button
             type="primary"
-            // onClick={handleSubmit}
+            onClick={handleSubmit}
             disabled={!isImageUploaded}
           >
             Save Blog
