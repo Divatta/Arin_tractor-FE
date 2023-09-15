@@ -1,0 +1,13 @@
+
+    .aboutInfo{
+        padding: 30px 150px;
+        @media screen and (max-width: 768px){
+            padding: 20px;
+        }
+        .aboutContent{
+            .title{
+                text-align: center;
+            }
+        }
+       
+    }

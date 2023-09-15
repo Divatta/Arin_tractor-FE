@@ -1,0 +1,29 @@
+.clients{
+    padding: 40px 200px;
+    
+   
+    .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .clients{
+        padding: 20px;
+        .logos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 200px;
+                margin: auto;
+                height: 200px;
+            }
+        }
+    }
+}

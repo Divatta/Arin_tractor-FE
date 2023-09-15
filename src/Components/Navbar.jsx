@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/arin_logo.png'
 import { FaAlignJustify } from 'react-icons/fa6';
 import { Menu, Dropdown } from 'antd';
 
@@ -66,7 +67,11 @@ function Navbar() {
 
   return (
     <nav id="navbar">
+      <NavLink to={'/'}>
+        <img src={logo} alt="no image" />
+      </NavLink>
       <div className="content-container">
+        
         <div className="content">
           <ul className={`links ${isMenuOpen ? 'open' : ''}`} style={{ zIndex: '3' }}>
             <li>
@@ -75,7 +80,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/"} onClick={toggleMenu}>
+              <NavLink to={"/about"} onClick={toggleMenu}>
                     ABOUT US
               </NavLink>
             </li>
@@ -89,7 +94,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/blogs"} onClick={toggleMenu}>
+              <NavLink to={"/latestBlogs"} onClick={toggleMenu}>
                 BLOGS
               </NavLink>
             </li>

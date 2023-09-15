@@ -1,6 +1,5 @@
 #latestBlog{
     padding: 50px 250px;
-    background-color: #000;
     @media screen and (max-width: 768px){
       padding: 20px;
       
@@ -8,7 +7,7 @@
     h3{
       text-align: center;
       color: #fff;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
     .latestBlogsContainer{
         .cardStyle{
