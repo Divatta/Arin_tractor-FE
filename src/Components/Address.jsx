@@ -3,8 +3,9 @@ import React from 'react'
 function Address() {
   return (
     <div className="contactAddress">
+        <h3>USA</h3>
         <div className="USA">
-            <h3>USA</h3>
+            
             <div className="address">
                 <p>Add- 224, Ground floor, IP colony Faridabad, Haryana. Pin- 121009</p>
             </div>
@@ -15,8 +16,9 @@ function Address() {
                 <p>info@arin.com</p>
             </div>
         </div>
+        <h3>INDIA</h3>
         <div className="USA">
-            <h3>INDIA</h3>
+            
             <div className="address">
                 <p>Add- 224, Ground floor, IP colony Faridabad, Haryana. Pin- 121009</p>
             </div>

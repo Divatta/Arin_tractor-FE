@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Carousel, Button, message as antdMessage, } from "antd";
+import { Card, Carousel, Button, message as antdMessage, Pagination } from "antd";
 import '../scss/LatestBlog.scss'
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import axios from "axios";
@@ -10,7 +10,8 @@ const { Meta } = Card;
 
 export default function LatestBlogs() {
   const [latestBlogs, setLatestBlogs] = useState([]);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 9;
 
   useEffect(() => {
     async function fetchLatestBlogs() {
@@ -22,15 +23,16 @@ export default function LatestBlogs() {
       }
     }
     fetchLatestBlogs();
-
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
+
+  // Calculate the index range for the current page
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = latestBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   const deleteBlog = async(id) => {
     try {
@@ -50,24 +52,14 @@ export default function LatestBlogs() {
     }
   }
 
-  const prevArrow = (
-    <Button>
-      <LeftCircleOutlined />
-    </Button>
-  );
-  const nextArrow = (
-    <Button>
-      <RightCircleOutlined />
-    </Button>
-  );
-
   return (
     <div id="latestBlog">
       <h3>LATEST FROM BLOG</h3>
         <div className="latestBlogsContainer">
-        <Carousel dots={true}>
-            {latestBlogs.map((blog) => (
-              <><Button onClick={() =>deleteBlog(blog._id)}> <i className="bi bi-trash"></i></Button><div
+        {/* <Carousel dots={true}> */}
+            {currentBlogs.map((blog) => (
+              <>
+              <div
                 key={blog._id}
               >
 
@@ -75,17 +67,24 @@ export default function LatestBlogs() {
                   cover={<img
                     alt="blog cover"
                     src={blog.image}
-                    // src="https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-250nw-1714666150.jpg"
                     className="cardImage" />}
                   className="cardStyle"
                 >
                   <Meta title={blog.title} description={blog.content} />
+                  <Button className="delBtn" onClick={() =>deleteBlog(blog._id)}> <i className="bi bi-trash"></i></Button>
                 </Card>
 
               </div></>
           ))}
-          </Carousel>
+          {/* </Carousel> */}
         </div>
+        <Pagination
+          style={{textAlign: "center", marginTop: "20px"}}
+          current={currentPage}
+          total={latestBlogs.length}
+          pageSize={blogsPerPage}
+          onChange={handlePageChange}
+        />
     </div>
   )
 }

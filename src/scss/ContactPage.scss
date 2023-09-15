@@ -39,7 +39,7 @@
     position: fixed;
     bottom: 100px;
     right: 0px;
-  }
+}
 
   .contactAddress{
     display: flex;
@@ -47,10 +47,17 @@
     margin: auto;
     gap: 30px;
     justify-content: space-between;
-    padding: 40px 200px;
+    padding: 40px 170px;
+    @media screen and (max-width: 768px){
+        padding: 20px;
+    }
     .USA{
         display: flex;
         flex-direction: row;
+        gap: 30px;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
     }
   
     .address{
