@@ -1,33 +1,66 @@
 @use './modules/vrs';
 .contactForm{
-    background-color: vrs.$prim-color;
+    // background-color: vrs.$prim-color;
     padding: 20px;
+    // background-image: url("https://media.istockphoto.com/id/1221940414/photo/contact-us-icon-on-wood-cube-customer-service-and-support-for-self-quarantine-business.jpg?s=612x612&w=0&k=20&c=Rn27etEcMwxOvYSU7TBBdh5xxp9NGVub9DJQHbtFFwg=");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 30px auto;
-    height: max-content;
-    width: 450px;
+    height: 500px;
+    border-radius: 10px;
     @media screen and (max-width: 768px){
-        width: 330px;
-        margin: 10px;
+        flex-direction: column;
+        height: 330px;
+      
+        margin: 140px 0px;
     }
+    .imageContact{
+        img{
+            width: 530px;
+            object-fit: cover;
+            border-radius: 10px;
+            height: 500px;
+            @media screen and (max-width: 768px){
+                width: 350px;
+                height: 200px;
+            }
+        }
+    }
+   
     .form{
+        width: 500px;
+        border: 1px solid green;
+        //background-color: rgb(162, 247, 162);
+        border-radius: 5px;
+        padding: 50px;
+        @media screen and (max-width: 768px){
+            width: 350px;
+            padding: 10px;
+        }
         .contactTitle{
-            color: #fff;
+            font-size: 30px;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         input{
             padding: 10px;
-            border-radius: 0%;
+            border-radius: 5px;
+            background-color: rgba(103, 103, 103,0.5);
             &::placeholder{
-                color: gray;
+                color: #fff;
             }
         }
         .btn{
-            background-color: rgba(103, 103, 103,0.5);
+            background-color: vrs.$prim-color;
             color: #fff;
-            font-size: 20px;
+            font-size: 18px;
             margin: auto;
-            height: 50px;
+            height: 40px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,6 +80,10 @@
     margin: auto;
     gap: 30px;
     justify-content: space-between;
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
     padding: 40px 170px;
     @media screen and (max-width: 768px){
         padding: 20px;
@@ -54,23 +91,36 @@
     .USA{
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 50px;
         @media screen and (max-width: 768px){
             flex-direction: column;
         }
     }
   
     .address{
-       
-        border: 1px solid grey;
+        position: relative;
         width: 350px;
-        border: 2px solid grey;
-        height: 70px;
+        color: vrs.$prim-color;
+        height: 100px;
+        background-color: rgb(162, 247, 162);
+        border-radius: 5px;
         padding: 5px;
-        padding: auto;
+     
+        i{
+            color: #fff;
+            position: absolute;
+            top: -20%;
+            left: 45%;
+            background-color: vrs.$prim-color;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 50%;
+            
+        }
         text-align: center;
         p{
             font-weight: lighter;
+            margin-top: 30px;
         }
 
     }
