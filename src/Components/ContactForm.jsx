@@ -33,8 +33,11 @@ function ContactForm() {
     }
   return (
     <div className="contactForm">
+         <div className="imageContact">
+            <img src="https://img.freepik.com/premium-photo/business-concept-contact-us-text-icon-wooden-cubes-copy-space-text_577978-293.jpg" alt="no image" />
+        </div>
         <Form className="form">
-            <Title level={3} className='contactTitle'>Contact Us</Title>
+            {/* <Title level={3} className='contactTitle'>Contact Us</Title> */}
             <Form.Item htmlFor="userName">
                 <Input
                 type="text"
@@ -89,6 +92,7 @@ function ContactForm() {
                 Send Message
             </Button>
         </Form>
+       
     </div>
   )
 }

@@ -17,6 +17,7 @@ import DoorToDoor from './Pages/DoorToDoor'
 import WareHouse from './Pages/WareHouse'
 import ImagesPage from './Pages/ImagesPage'
 import VideoPage from './Pages/VideoPage'
+import ScrollToTop from './Components/ScrollToTop'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path='/blogs' element={<Blogs/>} />
             <Route path='/latestBlogs' element={<BlogPage/>} />
         </Routes>
+        <ScrollToTop />
         <Footer/>
     </BrowserRouter>
   )

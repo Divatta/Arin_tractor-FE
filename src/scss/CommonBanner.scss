@@ -1,0 +1,27 @@
+
+.common-background {
+    background-image: linear-gradient( to bottom,rgba(86, 245, 86,0.3),rgba(86, 245, 86,0.3),rgba(86, 245, 86,0.3)), url('https://img.freepik.com/premium-photo/smart-farming-concept-tractor-smartphone-farm-online-management-ads_597582-4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25vh;
+    color: #fff;
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 900px){
+      display: none;
+    }
+    .content {
+      h1 {
+        color: #fff;
+     
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+
+  

@@ -4,6 +4,7 @@ import '../scss/LatestBlog.scss'
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import axios from "axios";
 import BlogApi from "./API/BlogApi";
+import CommonBanner from "./CommonBanner";
 
 const { Meta } = Card;
 // const baseUrl = import.meta.env.VITE_BASE_URL;
@@ -53,7 +54,9 @@ export default function LatestBlogs() {
   }
 
   return (
-    <div id="latestBlog">
+    <>
+    <CommonBanner title="Blogs"/>
+      <div id="latestBlog">
       <h3>LATEST FROM BLOG</h3>
         <div className="latestBlogsContainer">
         {/* <Carousel dots={true}> */}
@@ -86,5 +89,6 @@ export default function LatestBlogs() {
           onChange={handlePageChange}
         />
     </div>
+    </>
   )
 }

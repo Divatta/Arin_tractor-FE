@@ -29,13 +29,13 @@ function Navbar() {
     setIsServiceMenuOpen(false);
   };
 
-  const handleMediaMenuOpen = () => {
-    setIsMediaMenuOpen(true);
-  };
+  // const handleMediaMenuOpen = () => {
+  //   setIsMediaMenuOpen(true);
+  // };
 
-  const handleMediaMenuClose = () => {
-    setIsMediaMenuOpen(false);
-  };
+  // const handleMediaMenuClose = () => {
+  //   setIsMediaMenuOpen(false);
+  // };
 
   const serviceDropDown = (
     <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose}>
@@ -92,6 +92,21 @@ function Navbar() {
       <NavLink to={"/"}>
         <img src={logo} alt="no image" />
       </NavLink>
+      <div className="container">
+
+     
+      <div className="media-container">
+        <p><strong>Toll Free Number: 8454354234</strong></p>
+        <div className="socialLinks">
+          <i className="bi bi-facebook"></i>
+          <i className="bi bi-whatsapp"></i>
+          <i className="bi bi-instagram"></i>
+          <i className="bi bi-telegram"></i>
+          <i className="bi bi-twitter"></i>
+
+        </div>
+
+      </div>
       <div className="content-container">
         <div className="content">
           <ul
@@ -150,6 +165,7 @@ function Navbar() {
             <FaAlignJustify />
           </div>
         </div>
+      </div>
       </div>
     </nav>
   );
