@@ -7,8 +7,6 @@ import BlogApi from "../Components/API/BlogApi";
 
 function AdminPanel() {
   const [latestBlogs, setLatestBlogs] = useState([]);
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const blogsPerPage = 9;
 
   useEffect(() => {
     async function fetchLatestBlogs() {

@@ -19,11 +19,11 @@ function AboutInfo1() {
                 <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad vel aspernatur dolor earum quo, labore quia eum sequi blanditiis doloribus! Sint id tempora porro adipisci vel dignissimos quam soluta.</Text>
             </div>
             <div className="aboutContent">
-                <Title level={3} className="title">OUR Team</Title>
+                <Title level={3} className="title">OUR TEAM</Title>
                 <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad vel aspernatur dolor earum quo, labore quia eum sequi blanditiis doloribus! Sint id tempora porro adipisci vel dignissimos quam soluta.</Text>
             </div>
             <div className="aboutContent">
-                <Title level={3} className="title">OUR Strength</Title>
+                <Title level={3} className="title">OUR STRENGTH</Title>
                 <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ad vel aspernatur dolor earum quo, labore quia eum sequi blanditiis doloribus! Sint id tempora porro adipisci vel dignissimos quam soluta.</Text>
             </div>
         </div>
