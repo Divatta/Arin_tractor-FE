@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Card, Carousel, Button, message as antdMessage, Pagination } from "antd";
+import { Card, message as antdMessage, Pagination } from "antd";
 import '../scss/LatestBlog.scss'
-import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
-import axios from "axios";
-import BlogApi from "./API/BlogApi";
-import CommonBanner from "./CommonBanner";
+import BlogApi from "../Components/API/BlogApi";
+import CommonBanner from "../Components/CommonBanner";
 
 const { Meta } = Card;
-// const baseUrl = import.meta.env.VITE_BASE_URL;
 
 export default function LatestBlogs() {
   const [latestBlogs, setLatestBlogs] = useState([]);
@@ -35,31 +32,12 @@ export default function LatestBlogs() {
     setCurrentPage(page);
   };
 
-  const deleteBlog = async(id) => {
-    try {
-      if(window.confirm(`Are you sure to delete blog?`)){
-        await axios.delete(`https://arintractor.onrender.com/api/v1/delete/${id}`, {
-          headers: {
-            'Content-Type' : 'application/json'
-          }
-        })
-        antdMessage.success("Blog deleted successfully");
-  
-      }
-      window.location.reload();
-    } catch (error) {
-      console.error("Error deleting blog:", error);
-      antdMessage.error("Error deleting blog");
-    }
-  }
-
   return (
     <>
     <CommonBanner title="Blogs"/>
       <div id="latestBlog">
       <h3>LATEST FROM BLOG</h3>
         <div className="latestBlogsContainer">
-        {/* <Carousel dots={true}> */}
             {currentBlogs.map((blog) => (
               <>
               <div
@@ -74,12 +52,10 @@ export default function LatestBlogs() {
                   className="cardStyle"
                 >
                   <Meta title={blog.title} description={blog.content} />
-                  <Button className="delBtn" onClick={() =>deleteBlog(blog._id)}> <i className="bi bi-trash"></i></Button>
                 </Card>
 
               </div></>
           ))}
-          {/* </Carousel> */}
         </div>
         <Pagination
           style={{textAlign: "center", marginTop: "20px"}}

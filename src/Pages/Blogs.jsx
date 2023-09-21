@@ -73,8 +73,8 @@ function Blogs() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Add a New Blog</h1>
+    <div style={{ padding: "20px", width: "350px", backgroundColor: "lightblue" , margin: "50px auto"}}>
+      <h1 style={{textAlign: "center"}}>Add a New Blog</h1>
       <Form layout="vertical">
         <Form.Item label="Title">
           <Input value={title} onChange={(e) => setTitle(e.target.value)} />
@@ -108,7 +108,7 @@ function Blogs() {
           </Upload> */}
           <Input type="file" name="image"
           id="image" onChange={handleImageUpload}
-          />
+            />
         </Form.Item>
         {isImageUploaded && (
           <p style={{ color: "green" }}>Image uploaded successfully</p>

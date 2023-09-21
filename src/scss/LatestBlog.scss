@@ -1,7 +1,6 @@
 @use './modules/vrs';
 
 #latestBlog{
-  
     padding: 50px 250px;
   
     h3{
@@ -19,6 +18,7 @@
           box-shadow: vrs.$prim-shadow;
           margin-bottom: 50px;
           border-radius: 10px;
+          
           .delBtn{
             margin-top: 10px;
             margin: auto;
