@@ -7,7 +7,7 @@ const { Text } = Typography;
 const ServicesPageContent = ({ images, content }) => {
   return (
     <div className='services'>
-      <Text>{content}</Text>
+      <Text className='text'>{content}</Text>
       <div className='servicesContent'>
         {images.map((image, index) => (
           <Card key={index} className='imageCard' cover={<img alt={`Image ${index}`} src={image} />}>
