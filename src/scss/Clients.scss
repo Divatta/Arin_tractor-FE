@@ -1,7 +1,24 @@
 .clients{
     padding: 40px 200px;
     
-   
+   .text{
+    max-width: 1000px;
+    color: grey;
+    line-height: 25px;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    &:hover {
+        background-color: #fff;
+        transform: translateY(-5px);
+        transition: background-color 0.3s, transform 0.3s;
+      }
+   }
     .logos{
         display: flex;
         flex-direction: row;

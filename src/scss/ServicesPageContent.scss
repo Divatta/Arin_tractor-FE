@@ -1,5 +1,12 @@
 .services{
     padding: 40px 200px;
+   .text{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    text-align: justify;
+   }
     .servicesContent{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
