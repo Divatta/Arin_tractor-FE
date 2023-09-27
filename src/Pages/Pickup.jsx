@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesPageContent from '../Components/ServicesPagesContent';
 import CommonBanner from '../Components/CommonBanner';
+import KnowMore from '../Components/KnowMore';
 
 function Pickup() {
     const images = [
@@ -16,11 +17,14 @@ function Pickup() {
 
     
       return (
-        <div>
+        <>
+          <div>
            <CommonBanner title="PickUp and Delivery"/>
           {/* <h1 style={{textAlign: "center"}}>Pick up Page</h1> */}
           <ServicesPageContent images={images} content={content} content2={content2}/>
-        </div>
+          </div>
+          <KnowMore/>
+        </>
       );
 }
 

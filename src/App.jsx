@@ -42,6 +42,7 @@ function App() {
             <Route path='/latestBlogs' element={<LatestBlog/>} />
         </Routes>
         <ScrollToTop />
+        
         <Footer/>
     </BrowserRouter>
   )

@@ -8,6 +8,7 @@ import "../scss/Navbar.scss";
 const menuStyle = {
   textDecoration: "none",
   fontSize: "17px",
+  color: "#fff" 
 };
 
 function Navbar() {
@@ -38,7 +39,7 @@ function Navbar() {
   // };
 
   const serviceDropDown = (
-    <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose}>
+    <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose} style={{backgroundColor: "mediumseagreen"}}>
       <Menu.Item key="shipping">
         <NavLink
           to={"/services/shipping"}
