@@ -37,6 +37,7 @@ function Navbar() {
   // const handleMediaMenuClose = () => {
   //   setIsMediaMenuOpen(false);
   // };
+  
 
   const serviceDropDown = (
     <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose} style={{backgroundColor: "mediumseagreen"}}>
