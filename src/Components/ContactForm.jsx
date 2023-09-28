@@ -25,7 +25,7 @@ function ContactForm() {
                     "Content-Type": "application/json"
                 }
             })
-            antdMessage.success("Contact datas created successfully");  
+            antdMessage.success("Message sent successfully");  
         } catch (error) {
             console.error("Error creating contact us:", error);
             antdMessage.error("Error creating contact us"); 
@@ -88,9 +88,9 @@ function ContactForm() {
                 />
             </Form.Item>
 
-            <Button className="btn" onClick={handleSubmit}>
+            <button className='btn' onClick={handleSubmit}>
                 Send Message
-            </Button>
+            </button>
         </Form>
        
     </div>

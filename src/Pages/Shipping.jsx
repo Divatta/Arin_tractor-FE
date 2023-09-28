@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesPageContent from '../Components/ServicesPagesContent';
 import CommonBanner from '../Components/CommonBanner';
+import KnowMore from '../Components/KnowMore';
 
 function Shipping() {
     const images = [
@@ -16,11 +17,14 @@ function Shipping() {
       const content3 = `We provide you the state of state-of-the-art warehousing facilities and optimize your supply chain. Our shipping services are designed well to meet your demands and ensure that your products reach your destination on time. For heavy or oversize cargo, we are experts in handling project logistics cargo. With our many years of experience, we manage your shipments, whether they consist of equipment, machinery, or industrial components. Our core shipping services add value to us and become a reason for the success of your business. We tailored your shipping services needs by giving comprehensive solutions for your export and import requirements. `;
       
       return (
-        <div>
+        <>
+          <div>
           <CommonBanner title="Shipping"/>
           {/* <h1 style={{textAlign: "center"}}>Shipping Page</h1> */}
           <ServicesPageContent images={images} content={content} content2={content2} content3={content3}/>
-        </div>
+          </div>
+          <KnowMore/>
+        </>
       );
 }
 

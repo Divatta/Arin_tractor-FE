@@ -15,7 +15,7 @@
     @media screen and (max-width: 768px){
         flex-direction: column;
         height: 330px;
-      
+        margin-left: -20px;
         margin: 140px 0px;
     }
     .imageContact{
@@ -25,7 +25,7 @@
             border-radius: 10px;
             height: 500px;
             @media screen and (max-width: 768px){
-                width: 350px;
+                width: 100%;
                 height: 200px;
             }
         }
@@ -38,7 +38,7 @@
         border-radius: 5px;
         padding: 50px;
         @media screen and (max-width: 768px){
-            width: 350px;
+            width: 100%;
             padding: 10px;
         }
         .contactTitle{
@@ -55,16 +55,18 @@
             }
         }
         .btn{
-            background-color: vrs.$prim-color;
+            background-color: mediumseagreen;
             color: #fff;
-            font-size: 18px;
             margin: auto;
-            height: 40px;
-            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             border: none;
+            &:hover{
+
+                background-color: #fff;
+                color: mediumseagreen;
+            }
         }
     }
 }
@@ -86,7 +88,7 @@
     }
     padding: 40px 170px;
     @media screen and (max-width: 768px){
-        padding: 20px;
+        padding: 10px;
     }
     .USA{
         display: flex;
@@ -100,18 +102,21 @@
     .address{
         position: relative;
         width: 350px;
-        color: vrs.$prim-color;
+      
         height: 100px;
-        background-color: rgb(162, 247, 162);
+        background-color: rgb(163, 224, 190);
         border-radius: 5px;
         padding: 5px;
+        @media screen and (max-width: 768px){
+            margin: 5px;
+        }
      
         i{
             color: #fff;
             position: absolute;
             top: -20%;
             left: 45%;
-            background-color: vrs.$prim-color;
+            background-color: mediumseagreen;
             font-size: 24px;
             padding: 10px;
             border-radius: 50%;

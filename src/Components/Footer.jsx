@@ -8,18 +8,21 @@ function Footer() {
         <div className="footerColumns">
             <div className="footerLogoInfo">
             <img src={footerLogo} alt="no image" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eos similique ab nulla eaque aut. Molestias ipsam facilis quidem repellat nulla! Est minus hic, illo nostrum illum ratione amet inventore.</p>
+            {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eos similique ab nulla eaque aut. Molestias ipsam facilis quidem repellat nulla! Est minus hic, illo nostrum illum ratione amet inventore.</p> */}
             </div>
             <div className="impLinks">
-                <h4>IMPORTANT LINKS</h4>
+                <h4>COMPANY</h4>
                 <div className="Links">
                     <Link to={"/about"}><span> About Us</span></Link>
-                    <Link to={"/service"}><span> Services</span></Link>
+                    <Link to={"/latestBlogs"}><span> Blogs</span></Link>
+                    <Link to={"/clients"}><span> Clients</span></Link>
+
+
                 </div>
             </div>
 
             <div className="impLinks">
-                <h4>OTHER LINKS</h4>
+                <h4>CORPORATE LINKS</h4>
                 <div className="Links">
                     <Link to={"/terms&privacy"}><span> Terms&Privacy Policy</span></Link>
                   
@@ -29,33 +32,30 @@ function Footer() {
             </div>
 
             <div className="impLinks">
-                <h4>SUPPORT</h4>
+                <h4>CONTACT US</h4>
                 <div className="Links">
-                    <span> +918374534655 </span>
-                    <span> info@arin.com</span>
+                    <span> <i className="bi bi-geo-alt-fill"></i> Head Office: <br />
+                        Arin Tractorwala Division,
+                        Phase IV, Industrial Area,
+                        S.A.S Nagar (Mohali),
+                        Punjab -160055.
+                    </span>
+                    <span> <i className="bi bi-telephone-fill"></i> +918374534655 </span>
+                    <span> <i className="bi bi-envelope-fill"></i>  info@arin.com</span>
                 </div>
+            </div>
 
-                <h4>OPENING HOURS</h4>
-                    <div className="Links">
-                        <span>Wed-Mon: 10AM to 7PM</span>
-                        <span>Tuesday - Weekly Off</span>
-                    </div>
+            <div className="impLinks">
+                <h4>FOLLOW US</h4>
+                <div className="Link">
+                {/* <span><Link to={"https://www.whatsapp.com"} className="bi bi-whatsapp" > </Link></span> */}
+                    {/* <span><Link to={"https://www.linkedin.com"} className='bi bi-linkedin'></Link></span> */}
+                    <span><Link to={"https://www.facebook.com"} className='bi bi-facebook'></Link></span>
+                    <span><Link to={"https://www.instagram.com"} className='bi bi-instagram'></Link></span>
+                    <span><Link to={"https://www.twitter.com"} className='bi bi-twitter-x'></Link></span>
+                </div>
             </div>
         </div>
-        {/* <div className="footerColumns"> */}
-            {/* <div className="impLinks">
-                
-                <div className="Links logos">
-                    
-                    <span><Link to={"whatsapp://send?text=Hi!&phone=9773643677"} className="bi bi-whatsapp" > </Link></span>
-                    <span><Link to={"mailto:info@sattonjanam.com"} className="bi bi-envelope-fill" > </Link></span>
-                    <span><Link to={"https://www.linkedin.com/company/sattonjanam-matrimonial-services/about/?viewAsMember=true"} className='bi bi-linkedin'></Link></span>
-                    <span><Link to={"https://www.facebook.com/profile.php?id=61550954489680&sk=about_contact_and_basic_info"} className='bi bi-facebook'></Link></span>
-                    <span><Link to={"https://www.instagram.com/sattonjanam_matrimony/"} className='bi bi-instagram'></Link></span>
-                    <span><Link to={"#"} className='bi bi-twitter'></Link></span>
-                </div>
-            </div> */}
-        {/* </div> */}
 
         <div className="footerEnd">
             <p>© 2023 Arin Tractorwala. All Rights Reserved. | Privacy Policy</p>

@@ -1,8 +1,8 @@
 @use './modules/vrs';
 
 footer{
-    background-color: rgb(9, 8, 8);
-    color: rgb(147, 146, 146);
+    background-color: rgba(4, 156, 75, 0.6);
+    color: rgb(79, 78, 78);
     .footerColumns{
         display: flex;
         flex-direction: row;
@@ -37,9 +37,8 @@ footer{
             }
         }
         .impLinks{
-            width: 260px;
+            width: 200px;
             h4{
-                color: #fff;
                 font-weight: 600;
             }
             .Links{
@@ -48,7 +47,7 @@ footer{
                 gap: 14px;
                 a{
                     text-decoration: none;
-                    color: rgb(147, 146, 146);
+                    color: rgb(79, 78, 78);
 
                     &:hover{
                         text-decoration: underline;
@@ -57,11 +56,27 @@ footer{
                 span, .location{
                     font-size: 15px;
                     font-weight: lighter;
+                    line-height: 25px;
                     // line-height: 30px;
                 }
                 .location{
                     line-height: 30px;
                     margin: 5px 0px;
+                }
+            }
+            .Link{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                span{
+                    .bi{
+                        color: rgb(18, 107, 58);
+                        font-size: 20px;
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                    
                 }
             }
             
@@ -87,7 +102,7 @@ footer{
     }
     .footerEnd{
      
-        background-color: rgb(61, 61, 61);
+        background-color: mediumseagreen;
         padding: 10px 0px;
         p{
             color: #fff;

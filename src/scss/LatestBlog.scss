@@ -18,7 +18,13 @@
           box-shadow: vrs.$prim-shadow;
           margin-bottom: 50px;
           border-radius: 10px;
-          
+          &:hover {
+            background-color: #fff;
+            transform: translateY(-5px);
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 10px rgb(60, 179, 113);
+    
+          }
           .delBtn{
             margin-top: 10px;
             margin: auto;

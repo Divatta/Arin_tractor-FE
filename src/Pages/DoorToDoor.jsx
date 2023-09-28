@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesPageContent from '../Components/ServicesPagesContent';
 import CommonBanner from '../Components/CommonBanner';
+import KnowMore from '../Components/KnowMore';
 
 function DoorToDoor() {
     const images = [
@@ -15,11 +16,14 @@ function DoorToDoor() {
       const content2 = `While providing door-to-door solutions to our clients, we take some important factors into account, like budget, delivery time, and nature of your cargo. From small size goods to large quantity of goods, we have experience to handle all. The good thing is that door-to-door services offered by us cover your entire logistics chain, from the time when cargo is carried from the source till it reaches to exact destination. By getting door-to-door services from us, you can easily navigate from complex world of international trade. Moreover, our experts are also well-versed in import and export paperwork and ensure that all important documentation is in order. We ensure that your every shipment meets the industry requirements and reduces the risk of delays or any damages. In short, the ArinTractorwala door-to-door services reduce the risks effectively. We always prioritize the safety and security of your goods throughout the whole journey.`;
     
       return (
-        <div>
+        <>
+          <div>
           <CommonBanner title="Door To Door"/>
           {/* <h1 style={{textAlign: "center"}}>Door to Door Page</h1> */}
           <ServicesPageContent images={images} content={content} content2={content2}/>
-        </div>
+          </div>
+          <KnowMore/>
+        </>
       );
 }
 
