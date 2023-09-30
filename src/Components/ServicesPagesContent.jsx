@@ -16,7 +16,7 @@ const ServicesPageContent = ({ images, content, content2, content3 }) => {
       <div className='servicesContent'>
         {images.map((image, index) => (
           <Card key={index} className='imageCard' cover={<img alt={`Image ${index}`} src={image} />}>
-            <Meta title={`Image ${index}`} />
+            {/* <Meta title={`Image ${index}`} /> */}
           </Card>
         ))}
       </div>

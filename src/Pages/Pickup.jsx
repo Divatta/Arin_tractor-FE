@@ -5,10 +5,9 @@ import KnowMore from '../Components/KnowMore';
 
 function Pickup() {
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
+        'https://i.ytimg.com/vi/DfBD_ydaVkM/hqdefault.jpg',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0KmGVIF92ad0uDK5fe4u9-WEztB7kPxdp0YG6EDWU7R1todWSJg5EcHLFoiW6da8XuIU&usqp=CAU',
+        'https://www.tractortransport.com/blog/wp-content/uploads/2020/06/56392-1.jpeg',
        
       ];
     

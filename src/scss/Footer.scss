@@ -1,8 +1,8 @@
 @use './modules/vrs';
 
 footer{
-    background-color: rgba(4, 156, 75, 0.6);
-    color: rgb(79, 78, 78);
+    background-color: rgb(33, 33, 33);
+    color: #fff;
     .footerColumns{
         display: flex;
         flex-direction: row;
@@ -47,7 +47,7 @@ footer{
                 gap: 14px;
                 a{
                     text-decoration: none;
-                    color: rgb(79, 78, 78);
+                    color:#fff;
 
                     &:hover{
                         text-decoration: underline;
@@ -70,7 +70,7 @@ footer{
                 gap: 20px;
                 span{
                     .bi{
-                        color: rgb(18, 107, 58);
+                        color: #fff;
                         font-size: 20px;
                         &:hover{
                             color: #fff;
@@ -92,7 +92,7 @@ footer{
     .logos span a{
         height: 45px;
         width: 45px;
-        color: grey;
+        color:#fff;
         font-size: 22px;
         display: inline-block;
         align-items: center;
@@ -102,7 +102,7 @@ footer{
     }
     .footerEnd{
      
-        background-color: mediumseagreen;
+        background: linear-gradient( to bottom,rgb(246, 201, 119),rgb(247, 193, 92),rgb(242, 171, 41));
         padding: 10px 0px;
         p{
             color: #fff;

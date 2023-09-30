@@ -9,14 +9,14 @@
    }
     .servicesContent{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         justify-content: space-evenly;
         gap: 30px;
-        
-        grid-auto-rows: 180px;
+        margin-bottom: 50px;
+        grid-auto-rows: 230px;
         .imageCard{
             width: 300px;
-            height: 100px;
+            height: 200px;
         }
     }
 }
@@ -26,11 +26,11 @@
         padding: 20px;
         .servicesContent{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             justify-content: space-evenly;
             gap: 30px;
             
-            grid-auto-rows: 180px;
+            grid-auto-rows: 250px;
             .imageCard{
                 width: 300px;
                 height: 100px;

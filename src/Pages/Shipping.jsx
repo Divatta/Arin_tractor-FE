@@ -5,10 +5,9 @@ import KnowMore from '../Components/KnowMore';
 
 function Shipping() {
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
+        'https://media.istockphoto.com/id/491151340/photo/tractor-on-the-field.jpg?s=612x612&w=0&k=20&c=GuRHohYsC-iq6grpzkZPTPj55lDX1hIQrGhA2MNLTqI=',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl_jxv-oJt3jwpPyf0Gy3UQAC9VhkYMBHaxvb_f9lWmqq61Z4OGRQK1KAjlKZP0tWf7ZU&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbiVvhH07GN2rCfmymf50jckcatbQ4f5gHJPJ-GUQBM7dHHXaHaU2FWPg5J3Vqsg3NhvI&usqp=CAU',
        
       ];
     
