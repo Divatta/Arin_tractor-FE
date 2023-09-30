@@ -104,7 +104,7 @@
         width: 350px;
       
         height: 100px;
-        background-color: rgb(163, 224, 190);
+        background-color: lightgrey;
         border-radius: 5px;
         padding: 5px;
         @media screen and (max-width: 768px){
@@ -112,11 +112,11 @@
         }
      
         i{
-            color: #fff;
+            color: #FFF;
             position: absolute;
             top: -20%;
             left: 45%;
-            background-color: mediumseagreen;
+            background-color: grey;
             font-size: 24px;
             padding: 10px;
             border-radius: 50%;

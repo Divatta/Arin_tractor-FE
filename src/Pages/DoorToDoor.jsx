@@ -5,10 +5,9 @@ import KnowMore from '../Components/KnowMore';
 
 function DoorToDoor() {
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
+        'https://c8.alamy.com/comp/EYJ4CB/man-closes-door-farm-tractor-EYJ4CB.jpg',
+        'https://tractoraddict.com/wp-content/uploads/2020/02/Kubota-MX5400-width-in-feet.jpg',
+        'https://c8.alamy.com/comp/HDHJBK/man-driving-a-tractor-with-door-open-HDHJBK.jpg',
        
       ];
     

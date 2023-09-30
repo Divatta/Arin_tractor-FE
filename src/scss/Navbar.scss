@@ -4,8 +4,7 @@
 #navbar {
   padding-block: 10px;
   @include flex.flexbox(row);
-  // background: linear-gradient( to bottom,rgb(86, 245, 86),rgb(86, 245, 86),rgb(86, 245, 86)), url("https://thumbs.dreamstime.com/b/banner-lush-green-grass-isolated-against-white-background-190048656.jpg");
-  background: linear-gradient( to bottom,rgb(128, 250, 128),rgb(158, 247, 158),rgb(115, 250, 115));
+  background: linear-gradient( to bottom,rgb(246, 201, 119),rgb(247, 193, 92),rgb(242, 171, 41));
   height: 80px;
   gap: 60px;
   background-position: center;
@@ -25,13 +24,13 @@
     @include flex.flexbox(row);
     justify-content: space-around;
     p{
-      color: vrs.$prim-color;
+      color: #fff;
     }
     .socialLinks{
       @include flex.flexbox(row);
       gap: 30px;
       i{
-        color: vrs.$prim-color;
+        color: #fff;
         padding: 4px;
         cursor: pointer;
         &:hover{

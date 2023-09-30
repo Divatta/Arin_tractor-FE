@@ -5,10 +5,9 @@ import KnowMore from '../Components/KnowMore';
 
 function WareHouse() {
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
+        'https://c8.alamy.com/comp/EME44B/employees-who-use-the-advance-tracking-system-to-package-orders-and-EME44B.jpg',
+        'https://media.gettyimages.com/id/1340686684/photo/he-loves-his-farm.jpg?s=612x612&w=gi&k=20&c=aJtr8eYm4wnKixWhNVWPdXbgRXYNJkk4JXVCXcUzG2k=',
+        'https://media.istockphoto.com/id/1332489558/photo/modern-eco-farm-collect-and-delivery-harvest-of-organic-fruits-to-warehouse.jpg?s=612x612&w=0&k=20&c=SHk1z_a1y1ClDPMpQuTPb6zn2YJPUJmZhUVsMKhG_W4=',
        
       ];
     

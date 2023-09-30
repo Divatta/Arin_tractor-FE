@@ -5,10 +5,9 @@ import KnowMore from '../Components/KnowMore';
 
 function Package() {
     const images = [
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkxPXX8jypYNPDeTghU7Rru0sqZlPRUACbQ&usqp=CAU',
+        'https://www.agprocompanies.com/webres/File/3025E%20complete%20package.jpg',
+        'https://image.made-in-china.com/44f3j00uWTaSUOMYmpz/China-Taihong-4WD-80HP-Wheel-Farm-Tractor-TH-804-.webp',
+        'https://image.made-in-china.com/44f3j00FivonIkscBqy/China-Premium-Agricultural-50HP-Farm-Tractors-for-Sale.webp',
        
       ];
     

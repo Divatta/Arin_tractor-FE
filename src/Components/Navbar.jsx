@@ -40,7 +40,7 @@ function Navbar() {
   
 
   const serviceDropDown = (
-    <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose} style={{backgroundColor: "mediumseagreen"}}>
+    <Menu visible={isServiceMenuOpen} onClick={handleServiceMenuClose} style={{backgroundColor: "orange"}}>
       <Menu.Item key="shipping">
         <NavLink
           to={"/services/shipping"}
@@ -100,11 +100,11 @@ function Navbar() {
       <div className="media-container">
         <p><strong>Toll Free Number: 8454354234</strong></p>
         <div className="socialLinks">
-          <i className="bi bi-facebook"></i>
-          <i className="bi bi-whatsapp"></i>
-          <i className="bi bi-instagram"></i>
-          <i className="bi bi-telegram"></i>
-          <i className="bi bi-twitter"></i>
+          <a href="https://facebook.com"><i className="bi bi-facebook"></i></a>
+          <a href="https://whatsapp.com"><i className="bi bi-whatsapp"></i></a>
+          <a href="https://instagram.com"><i className="bi bi-instagram"></i></a>
+          <a href="https://telegram.com"><i className="bi bi-telegram"></i></a>
+          <a href="hpps://twitter.com"><i className="bi bi-twitter"></i></a>
 
         </div>
 
